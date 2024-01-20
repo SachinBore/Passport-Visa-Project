@@ -1,0 +1,264 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('/images/registration.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/* Apply a background color */
+/* body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+	
+  } */
+
+/* Center the form horizontally */
+.form-container {
+   /*  background-color: #f2f2f2; */
+   
+   margin-top:-280px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    min-width: 200px;
+    /* margin: 0 auto; *//* 
+    background-color:red; */
+   margin-left:-350px;
+   
+}
+
+/* Style other table cells (for form inputs) */
+form table tr td:nth-child(n+2) {
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding:10px;
+    border: 1px solid  #ccc;
+    border-radius: 4px;
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+    margin-right:5px;
+    background-color:purple;
+   
+    
+
+}
+
+
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #1fc9dc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.my-errors
+{	
+	color:red;
+	margin-left:50px;
+	
+}
+
+
+
+.apply-type-div{
+	margin-top:5px;
+	display:flex;
+	flex-direction:row;
+	margin-left:3px;
+	justify-content: space-between;
+}
+
+h4{
+	margin-right:150px;
+}
+
+/* Apply common styles to input elements */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:grey; 
+    font-weight:550;
+    transition: border-color 0.3s ease, box-shadow 0.5s ease;
+}
+
+/* Apply styles on focus */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color:black;
+    border-radius:5px;
+    border-width:2px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    
+}
+
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+img{
+	width:100%;
+	height:auto;
+	margin-left:50px; 
+	border-radius:3%;
+}
+
+/* .big-container
+{
+	background-color:#c0c0c0;
+	background-color:aqua;
+	border-color:black;
+	padding:50px;
+	margin-left:400px;
+	margin-right:400px;
+	border-radius:50px;
+	
+}  */
+.form-container {
+    align-items:center; /* Vertically center the content */
+   	
+    justify-content: center;
+   
+    flex:column;
+ 
+}
+.form-content {
+    display: flex; /* Use flexbox for image and form alignment */
+    flex:column;
+    align-items: center; /* Center the items vertically */
+    
+}
+
+
+.form-container form{
+	margin-top:0;
+	width: 100%; /* Make the image width 100% of the container */
+    height: 100%; 
+    /* margin-left:-0px; */
+   
+}
+.apply-type-text{
+	font-size:14px;
+	 /* margin-left:150px; */
+	color:grey;
+	font-weight:500;
+		
+}
+
+/* Default styles for big-container */
+.big-container {
+	position:relative;
+	margin-top:510px;
+    width: 100%; /* By default, the container takes 100% width of its parent */
+    max-width: 800px; /* You can set a maximum width to control the content width */
+    max-height:1000px;
+    margin: 0 auto; /* Center the container horizontally */
+   	padding:50px;
+   	border-radius: 25% 25% 25% 25%;
+   	display:flex;
+   	flex-direction: column;
+   	justify-content:center;
+   	align-items:center;
+}
+.apply-type-div {
+    font-family: 'YourFontFamily', sans-serif;
+    font-size: 14px; /* Decrease the font size as needed */
+    /* font-weight: bold; */ /* Adjust the font weight as needed */
+    /* Add any other font styles you desire */
+    border: 1px solid #ccc; /* Add a border with desired color and width */
+    padding: 10px; /* Add padding for spacing inside the border */
+}
+.applyType {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:2px;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .big-container {
+        max-width: 100%; /* Reduce the maximum width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .big-container {
+        max-width: 100%; /* Use full width for even smaller screens */
+        padding: 25px; /* Further reduce padding for very small screens */
+        
+    }
+}
+
+.side-by-side {
+    width: 45%; /* Adjust the width as needed */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%; /* Add some space between the elements */
+    box-sizing: border-box;
+}
+
+/* Clearfix to prevent content overflow */
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+   
+.error-message {
+	color: red;
+}
+
+
+

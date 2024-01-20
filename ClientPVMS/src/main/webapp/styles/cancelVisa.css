@@ -1,0 +1,158 @@
+/* Reset some default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('/images/wm2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Center the form horizontally */
+.container {
+	background-color: #f2f2f2;;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	padding: 50px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+/* Style other table cells (for form inputs) */
+form table tr td:nth-child(n+2) {
+	padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select,
+	textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+	margin-right: 5px;
+	background-color: purple;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+	background-color: #1fc9dc;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.f-errors {
+	color: red;
+	font-size: 13px;
+}
+
+/* Apply common styles to input elements */
+input[type="text"], input[type="date"], input[type="email"], select,
+	textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 60px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: purple;
+	font-weight: 550;
+	transition: border-color 0.3s ease, box-shadow 0.5s ease;
+}
+
+/* Apply styles on focus */
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus,
+	select:focus, textarea:focus {
+	border-color: black;
+	border-radius: 5px;
+	border-width: 2px;
+	box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the submit button */
+input[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-left: 50px;
+	border-radius: 3%;
+}
+
+.container form-group {
+	font-family: Arial, sans-serif;
+}
+
+.form-container {
+	align-items: center; /* Vertically center the content */
+	justify-content: center;
+}
+
+.form-content {
+	display: flex; /* Use flexbox for image and form alignment */
+	align-items: center; /* Center the items vertically */
+}
+
+.form-container form {
+	margin-top: 0;
+	width: 100%; /* Make the image width 100% of the container */
+	height: 100%; /* Make the image height 100% of the container */
+}
+
+/* Default styles for big-container */
+.big-container {
+	position: relative;
+	margin-top: 510px;
+	width: 100%;
+	/* By default, the container takes 100% width of its parent */
+	max-width: 800px;
+	/* You can set a maximum width to control the content width */
+	max-height: 1000px;
+	margin: 0 auto; /* Center the container horizontally */
+	padding: 50px;
+	border-radius: 25% 0% 25% 0%;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+	.big-container {
+		max-width: 100%; /* Reduce the maximum width for smaller screens */
+		padding: 20px; /* Adjust padding for smaller screens */
+	}
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+	.big-container {
+		max-width: 100%; /* Use full width for even smaller screens */
+		padding: 25px; /* Further reduce padding for very small screens */
+	}
+}

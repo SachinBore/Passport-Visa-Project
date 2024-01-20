@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	padding: 0;
+} 
+
+.navdiv { 
+	background-color: #05386B; 
+
+
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navlogodiv {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.navlogodiv a {
+	text-decoration: none;
+	color: #EDF5E1;
+	font-weight: bold;
+	font-size: 45px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navlinksdiv {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	color: #EDF5E1;
+	font-size: 16px;
+	width: 40%;
+	height: 100%;
+	justify-content: space-between;
+	margin-right: -450px;
+}
+
+.navlinksdiv a {
+	text-decoration: none;
+	color: #EDF5E1;
+	font-size: 20px;
+	margin: 0 8px;
+
+	padding: 5px 10px;
+	border-radius: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.navlinksdiv a:hover {
+	background-color: #5CDB95;
+	color: #05386B;
+}
+
+.navlinksdiv a.active {
+
+  background-color: #5CDB95;
+
+    color: #05386B;
+
+}
+
+.navprofilediv {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 30px;
+	position: relative;
+
+}
+
+.navprofilediv img {
+	width: 35px;
+	height: 35px;
+
+}
+
+.dropdown-content {
+	display: none;
+	position: fixed;
+	background-color: #EDF5E1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	top: 60px;
+	left: 99%;
+	transform: translateX(-90%);
+}
+
+.dropdown-content {
+
+	display: none;
+
+	position: absolute;
+
+	background-color: #EDF5E1;
+
+	min-width: 200px;
+
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+	z-index: 1;
+
+	border: 1px solid #EDF5E1;
+
+	border-radius: 10px;
+
+}
+
+.navprofilediv:hover .dropdown-content {
+
+	display: block;
+
+}
+
+.dropdown-content a {
+
+	color: black;
+
+	padding: 20px 20px;
+
+	text-decoration: none;
+
+	display: block;
+
+	position: relative;
+
+
+	transition: transform 0.3s ease, z-index 0.3s ease;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #05386B;
+	transform: scale(1) translateX(0px);
+	border-radius: 10px;
+	color: white;
+}
